@@ -5,21 +5,21 @@
 class SealCli < Formula
   desc "CLI for the Seal Subscriptions Merchant API"
   homepage "https://github.com/hieutapt/seals-subscription-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.0/seal-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "03ccf675ebd0af073d88c4d0ac874ec801ba9bb2c122f6e3abee1ebadfbc7288"
+      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.1/seal-cli_0.3.1_darwin_amd64.tar.gz"
+      sha256 "c05444740eb7cd0b8f59fadbc7e5b7207ec70801cb1ba0eef3e052617950b53e"
 
       define_method(:install) do
         bin.install "seal-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.0/seal-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "29d8842de12bb0d042c6c125b0d37ba30e77e7e3e982b079d092645bbb401d4c"
+      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.1/seal-cli_0.3.1_darwin_arm64.tar.gz"
+      sha256 "d5bf783690535ddfb310d7821c8987592a6e43613896cf1580440a51b3921225"
 
       define_method(:install) do
         bin.install "seal-cli"
@@ -29,15 +29,15 @@ class SealCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.0/seal-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "6f5de3dc5c87603795b007037cd1d3f7d9bc119961f0bbc36733eb0668d135ce"
+      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.1/seal-cli_0.3.1_linux_amd64.tar.gz"
+      sha256 "425cb66d76a4dc60893c0ac63dc2b660ba562705d22193cded775a91144457d6"
       define_method(:install) do
         bin.install "seal-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.0/seal-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "fbd0deb9a1e0fcd8dded9f6cd0c018e3c0cdfeb20b64abc8ddd963a8bb35ceaf"
+      url "https://github.com/hieutapt/seals-subscription-cli/releases/download/v0.3.1/seal-cli_0.3.1_linux_arm64.tar.gz"
+      sha256 "4bf39097f357de20880c2921434185f3784d635481d6255c929b9b63e084f49c"
       define_method(:install) do
         bin.install "seal-cli"
       end
